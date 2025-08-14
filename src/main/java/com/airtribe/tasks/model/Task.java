@@ -8,16 +8,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import java.time.LocalDate;
 
-/**
- * @Entity: Declares the class as a JPA entity, which maps it to a database table.
- */
 @Entity
 public class Task {
 
-    /**
-     * @Id: Specifies the primary key of the entity.
-     * @GeneratedValue: Defines the strategy for generating the primary key values.
-     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -27,11 +20,9 @@ public class Task {
     private TaskPriority priority;
     private LocalDate dueDate;
 
-    // Default constructor for JPA
     public Task() {
     }
 
-    // Constructor for creating new tasks
     public Task(String title, String description, TaskStatus status, TaskPriority priority, LocalDate dueDate) {
         this.title = title;
         this.description = description;

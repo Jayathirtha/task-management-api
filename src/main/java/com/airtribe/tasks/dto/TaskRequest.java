@@ -4,11 +4,6 @@ import com.airtribe.tasks.enums.TaskPriority;
 import com.airtribe.tasks.enums.TaskStatus;
 import java.time.LocalDate;
 
-/**
- * Single Responsibility Principle (SRP): This class has one responsibility:
- * to represent the data structure of the incoming POST request payload.
- * It's a simple POJO without any business logic.
- */
 public class TaskRequest {
 
     private String title;
